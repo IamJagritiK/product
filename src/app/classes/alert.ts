@@ -1,4 +1,3 @@
-
 import { AlertType } from './../enums/alert-type.enum';
 
 export class Alert {

@@ -9,17 +9,24 @@ import {DomSanitizer, SafeUrl} from '@angular/platform-browser';
   styleUrls: ['./chat-message.component.scss']
 })
 export class ChatMessageComponent implements OnInit {
-  @Input() message: Message;
-  @Input() chatroomId: string;
-  private sanitizedPhotoUrl: SafeUrl;
+  // @Input() message: Message;
+  // @Input() chatroomId: string;
+  // private sanitizedPhotoUrl: SafeUrl;
+  //
+  // constructor(
+  //   private sanitizer: DomSanitizer
+  // ) {
+  // }
+  //
+  // ngOnInit() {
+  //   this.sanitizedPhotoUrl = this.sanitizer.bypassSecurityTrustUrl(this.message.sender.photoUrl);
+  // }
 
-  constructor(
-    private sanitizer: DomSanitizer
-  ) {
-  }
+  @Input() message: Message;
+
+  constructor() { }
 
   ngOnInit() {
-    this.sanitizedPhotoUrl = this.sanitizer.bypassSecurityTrustUrl(this.message.sender.photoUrl)
   }
 
 }

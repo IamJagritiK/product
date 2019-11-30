@@ -2,10 +2,8 @@ import { User } from './user';
 
 export class Message {
     message: string;
-    createdAt: any;
+    createdAt: Date;
     sender: User;
-    photoUrl: string;
-    sanitizedPhotoUrl: any;
 
     constructor({message, createdAt, sender}) {
         this.message = message;

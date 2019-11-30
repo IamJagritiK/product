@@ -8,25 +8,63 @@ import {ChatroomService} from '../../../../shared/chatroom.service';
   styleUrls: ['./chat-input.component.scss']
 })
 export class ChatInputComponent implements OnInit {
+
+  // constructor(
+  //   private chatroomService: ChatroomService
+  // ) { }
+ // //
+ // // public newMessageText: string = '';
+ // //
+ // //
+ // //  constructor() { }
+ // //
+ // //  ngOnInit() {
+ // //  }
+ // //
+ // //  public submit(message: string): void {
+ // //    // TODO save text to Firebase backend
+ // //    console.log('New Message: ', message);
+ // //
+ // //    // reset input
+ // //    this.newMessageText = '';
+ // //  }
+ // //
  //
- // public newMessageText: string = '';
+ //  public newMessageText = '';
  //
- //
- //  constructor() { }
+ //  constructor(
+ //    private chatroomService: ChatroomService
+ //  ) { }
  //
  //  ngOnInit() {
  //  }
  //
  //  public submit(message: string): void {
- //    // TODO save text to Firebase backend
- //    console.log('New Message: ', message);
+ //    this.chatroomService.createMessage(message);
  //
  //    // reset input
  //    this.newMessageText = '';
  //  }
- //
 
-  public newMessageText = '';
+
+  // public newMessageText = '';
+
+  // constructor(
+  //   private chatroomService: ChatroomService
+  // ) { }
+
+  // ngOnInit() {
+  // }
+
+  // public submit(message: string): void {
+  //   this.chatroomService.createMessage(message);
+
+  //   // reset input
+  //   this.newMessageText = '';
+  // }
+
+
+  public newMessageText: string = '';
 
   constructor(
     private chatroomService: ChatroomService

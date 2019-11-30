@@ -7,14 +7,27 @@ import {ChatroomService} from '../../../../shared/chatroom.service';
   styleUrls: ['./chatroom-list.component.scss']
 })
 export class ChatroomListComponent implements OnInit {
-  chatrooms = [];
+  // chatrooms = [];
+  //
+  // constructor(
+  //   public chatroomService: ChatroomService
+  // ) { }
+  //
+  // async ngOnInit() {
+  //   this.chatrooms = await this.chatroomService.getChatrooms();
+  // }
+  // constructor(
+  //   public chatroomService: ChatroomService
+  // ) { }
+
+  // ngOnInit() {
+  // }
 
   constructor(
     public chatroomService: ChatroomService
   ) { }
 
-  async ngOnInit() {
-    this.chatrooms = await this.chatroomService.getChatrooms();
+  ngOnInit() {
   }
 
 }

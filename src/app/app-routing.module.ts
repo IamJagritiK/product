@@ -31,6 +31,8 @@ const routes: Routes = [
   {
     path: 'chat/:chatroomId', component: ChatComponent, canActivate: [AuthGuard],
   },
+  {path: '**', redirectTo: '/login'},
+
   {path: '**', redirectTo: '/login'}
 
 ];

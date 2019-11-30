@@ -8,6 +8,19 @@ import {AuthService} from '../shared/auth.service';
 })
 export class NavbarComponent implements OnInit {
 
+
+  // public currentUser: any = null;
+
+  // constructor(
+  //   public auth: AuthService
+  // ) { }
+
+  // ngOnInit() {
+  //   this.auth.currentUser.subscribe( user => {
+  //     this.currentUser = user;
+  //   });
+  // }
+
   public currentUser: any = null;
 
   constructor(
@@ -19,5 +32,4 @@ export class NavbarComponent implements OnInit {
       this.currentUser = user;
     })
   }
-
 }
